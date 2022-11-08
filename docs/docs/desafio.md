@@ -1,7 +1,6 @@
 ---
 hide:
   - navigation
-  - footer
 ---
 
 # Desafio

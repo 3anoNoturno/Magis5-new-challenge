@@ -3,7 +3,6 @@ hide:
   - navigation
   - toc
   - title
-  - footer
 ---
 <style>
   body{

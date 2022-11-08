@@ -13,6 +13,7 @@ repo_name: Magis5-new-challenge
 edit_uri: ""
 theme:
   name: material
+  language: pt-BR
   logo: img/logo.gif
   favicon: img/logo.gif
   icon:
