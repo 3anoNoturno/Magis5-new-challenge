@@ -1,6 +1,6 @@
 # Documentação
 
-Para desenvolver a documentação foi utilizado [mkdocs](https://www.mkdocs.org/) estilizado com o tema [mkdocs-material](https://squidfunk.github.io/mkdocs-material/). Mkdocs exige uma versão recente de python, preferivelmente [***python3.7***](https://www.python.org/downloads/) ou maior. Acesse [***https://joaobotelho072002.github.io/***]() para visualização.
+Para desenvolver a documentação foi utilizado [mkdocs](https://www.mkdocs.org/) estilizado com o tema [mkdocs-material](https://squidfunk.github.io/mkdocs-material/). Mkdocs exige uma versão recente de python, preferivelmente [***python3.7***](https://www.python.org/downloads/) ou maior. Acesse [***https://3anonoturno.github.io/Magis5-new-challenge/***](https://3anonoturno.github.io/Magis5-new-challenge/) para visualização.
 
 ## Instalação
 

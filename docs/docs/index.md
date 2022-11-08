@@ -22,8 +22,7 @@ hide:
 
 <div class="cards button-align" markdown>
 
-  [Desafio](./desafio.md){ .md-button .md-button--primary}
-  [Documentação Técnica](./doc_tecnica.md){ .md-button .md-button--primary}
+  [Documentação](./doc_tecnica.md){ .md-button .md-button--primary}
 
 </div>
 </div>
