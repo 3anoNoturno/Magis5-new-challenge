@@ -1,0 +1,65 @@
+site_name: Magis5 New Challenge
+nav:
+  - Inicio: index.md
+  - Desafio: desafio.md
+  - Documentação Técnica: doc_tecnica.md
+#
+#
+# Don't alter the following sections
+#
+#
+repo_url: https://github.com/3anoNoturno/Magis5-new-challenge
+repo_name: Magis5-new-challenge
+edit_uri: ""
+theme:
+  name: material
+  logo: img/logo.gif
+  favicon: img/logo.gif
+  icon:
+    repo: fontawesome/brands/gitkraken
+  features:
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/eye
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/eye-outline
+        name: Switch to light mode
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+  - md_in_html
+plugins:
+  - search
+extra_css:
+  - stylesheets/extra_css.css
+# extra_javascript:
+#   - javascript/extra.js
