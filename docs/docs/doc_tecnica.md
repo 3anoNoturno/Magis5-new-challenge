@@ -5,28 +5,53 @@ hide:
 
 # Documentação Técnica
 
-# Requisitos Funcionais
-## Solução 1
+## Requisitos Funcionais
+
+### Solução 1
+
 1. O usuário deve poder cadastrar novos produtos com nome, descrição e estoque.
 2. O estoque deve ser atualizado tanto via ERP quanto via requisição de sistema Centralizador de Vendas.
 
-## Solução 2
+### Solução 2
+
 1. O sistema deve poder cadastrar anúncios requisitados pelo Centralizador de Vendas.
 2. O usuário deve poder comprar produtos anunciados.
 3. O sistema deve enviar a informação de que uma compra foi feita para o Centralizador de Vendas.
 4. O sistema deve poder atualizar os valores de estoque com a requisição do Centralizador de Vendas.
 
-## Solução 3
+### Solução 3
+
 1. O usuário deve poder consultar a base de produtos cadastrados.
 2. O usuário deve poder editar produtos cadastrados.
 3. O usuário poder excluir produtos cadastrados.
 4. O usuário deve poder requisitar a criação de novos anúncios nos Marketplaces conectados ao sistema.
 5. O sistema deve atualizar o estoque com a chegada da requisição do Marketplace.
 
+## Diagramas de Atividade
 
-# Diagramas de Atividade
 ![Diagrama de Login](img/diagrams/Diagrama_Login.png){: class="aligncenter"}
 
 ![Diagrama de Cadastro de Produtos](img/diagrams/Diagrama_Cadastro_Produto.png){: class="aligncenter"}
 
 ![Diagrama de Edição e Consulta de Produtos](img/diagrams/Diagrama_Edicao_Consulta_Produto.png){: class="aligncenter"}
+
+## Requisitos Técnicos
+
+## Back End
+
+### O que foi feito
+
+Foi criada um cluster remoto no [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try4?utm_content=rlsavisitor&utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=atlas%20mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&gclid=CjwKCAiAvK2bBhB8EiwAZUbP1GOoltN5jRe1EhgiHwsi7H2FMdRNo06sMQZBCaqKgPXi1CIGc-V3VRoCnBoQAvD_BwE) para que pudesse servir como nossa base de dados. Para nossa aplicação, Node.js juntamente com Nestjs foram utilizados para compor o back end.
+
+Criamos um método de criar e atualizar usuários no cluster, e também desenvolvemos um método de autenticação para os mesmos.
+
+### O que queríamos ter feito
+
+Considerando o pouco tempo disponível para o desenvolvimento, acabamos sem finalizar as seguintes funcoes:
+
+- updateProduto
+- anunciaProduto
+
+A ideia de `updateProduto` é chamar um endpoint que seria responsável por atualizar o produto com novos dados inseridos pelo usuário.
+
+Já a de `anunciaProduto` seria apenas um set da variável anuncia como `true` e um update na sua variável de array com o respectivo marketplace anunciado, para que apenas os produtos anunciados fossem exibidos na página de marketplace.
