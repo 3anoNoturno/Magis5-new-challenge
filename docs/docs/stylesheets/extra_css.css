@@ -54,3 +54,8 @@ h1 {
     max-width: 70%;
     max-height: 50%;
 }
+
+.aligncenter{
+  margin: auto;
+  display: block;
+}
