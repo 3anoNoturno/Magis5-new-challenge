@@ -43,7 +43,13 @@ hide:
 
 Foi criada um cluster remoto no [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try4?utm_content=rlsavisitor&utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=atlas%20mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&gclid=CjwKCAiAvK2bBhB8EiwAZUbP1GOoltN5jRe1EhgiHwsi7H2FMdRNo06sMQZBCaqKgPXi1CIGc-V3VRoCnBoQAvD_BwE) para que pudesse servir como nossa base de dados. Para nossa aplicação, Node.js juntamente com Nestjs foram utilizados para compor o back end.
 
-Criamos um método de criar e atualizar usuários no cluster, e também desenvolvemos um método de autenticação para os mesmos.
+Criamos um método de criar e atualizar usuários no cluster, e também desenvolvemos um método de autenticação para os mesmos. O Login é feito e um token de autorização é retornado para que o acesso ao BD remoto seja garantido.
+
+![login](img/login.png)
+
+Criamos também um método para criar e inserir produtos no BD. No qual o app utiliza-se do token de autenticação gerado para inserir um produto no BD, no qual, conta com o `username` como chave estrangeira para identificação de qual usuário é dono do respectivo produto.
+
+![product](img/product.png)
 
 ### O que queríamos ter feito
 
