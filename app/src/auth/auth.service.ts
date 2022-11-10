@@ -19,11 +19,14 @@ export class AuthService {
         let user
         try{
             user = await this.userService.findOne(username);
+            console.log(user)
+
         } catch (error) {
             return null
         }
 
-        const isPasswordValid = compareSync(password, user.password)
+        const isPasswordValid = password == user.password;
+
         if(!isPasswordValid) return null
 
         return user
